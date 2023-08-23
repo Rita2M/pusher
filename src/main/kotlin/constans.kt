@@ -1,0 +1,2 @@
+const val dbUrl = "firebase-adminsdk-ie3dz@my-first-prr.iam.gserviceaccount.com"
+const val token = "fHdFUNtASiSpxPhY-Tm58P:APA91bFnUlH_yiubDfL8PxfFXbB68MBUmfrgQRHGpHZBIjywynsrCWEITC-3hTcmnk1tjJCUK0cfaCyT-XNibyXlSbtGLyujs5x9aMqNkcR0PynuP5xrHcWZnnFIHMUj44CYPMEk59QR"
