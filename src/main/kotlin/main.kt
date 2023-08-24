@@ -16,14 +16,29 @@ fun main() {
 
     val message = Message.builder()
         .putData("action", "LIKE")
-        .putData("content", """{
+        .putData(
+            "content", """{
           "userId": 1,
           "userName": "Maxim",
           "postId": 2,
           "postAuthor": "Netology"
-        }""".trimIndent())
+        }""".trimIndent()
+        )
+        .setToken(token)
+        .build()
+    val message2 = Message.builder()
+        .putData("action", "POST")
+        .putData(
+            "content", """{
+            "userId": 2,
+            "postAuthor": "Tom",
+            "postId": 1,
+            "textPost": "Я не люблю себя, когда я трушу, Досадно мне. когда невинных бьют, Я не люблю, когда мне лезут в душу, Тем более, когда в неё плюют!"
+            }""".trimMargin()
+        )
         .setToken(token)
         .build()
 
     FirebaseMessaging.getInstance().send(message)
+    FirebaseMessaging.getInstance().send(message2)
 }
